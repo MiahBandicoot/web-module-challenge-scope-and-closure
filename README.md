@@ -42,6 +42,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+Closure is the boundries in which code can or cannot be accessed.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,9 +64,19 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+The closure is at return function because that is where the child function is created along with its closure is able to reach the variables of personalDice.
+
+b. Compare and contrast calling `dansRoll` the first and second 
+time. What is always the same? What could change?
+
+The range of the potential value remains the same, but the value itself may be different.
+
 c. What is the lexical scope of `newRoll`? 
 
+Everything within the reach of the parent "personalDice" which in turn is any variable defined outside of the function.
+
+The variables dansRoll and zoesRoll.
 ### Task 2c - Exit Ticket
 
 Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/WjSzNh9gDrD8Xn8hw/enY3yPRP3nEm7E).
