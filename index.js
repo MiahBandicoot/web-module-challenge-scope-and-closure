@@ -86,7 +86,7 @@ finalScore(inning, 9) might return:
 }
 function finalScore(cb,inn){
  
-for(let i=0; i<inn; i++){
+for(let i=0; i<=inn; i++){
 score.Home+=cb()
 
 score.Away+=cb()
@@ -140,35 +140,35 @@ let score=cb2(cb)
     score.Away+=cb()
   
   if(i===1){
-  console.log(`1st inning:${score.Away}-${score.Home}`)
+  console.log(`1st inning: Away: ${score.Away} - Home: ${score.Home}`)
 }
 else if(i===2){
-  console.log(`2nd inning:${score.Away}-${score.Home}`)
+  console.log(`2nd inning: Away: ${score.Away} - Home ${score.Home}`)
 }
 else if(i===3){
-  console.log(`3rd inning:${score.Away}-${score.Home}`)
+  console.log(`3rd inning: Away: ${score.Away} - Home ${score.Home}`)
 }
 else if(i===4){
-  console.log(`4th inning:${score.Away}-${score.Home}`)
+  console.log(`4th inning: Away: ${score.Away} - Home ${score.Home}`)
 }
 else if(i===5){
-  console.log(`5th inning:${score.Away}-${score.Home}`)
+  console.log(`5th inning: Away: ${score.Away} - Home ${score.Home}`)
 }
 else if(i===6){
-  console.log(`6th inning:${score.Away}-${score.Home}`)
+  console.log(`6th inning: Away: ${score.Away} - Home ${score.Home}`)
 }
 else if(i===7){
-  console.log(`7th inning:${score.Away}-${score.Home}`)
+  console.log(`7th inning: Away: ${score.Away} - Home ${score.Home}`)
 }
 else if(i===8){
-  console.log(`8th inning:${score.Away}-${score.Home}`)
+  console.log(`8th inning: Away: ${score.Away} - Home ${score.Home}`)
 }
 else if(i===9){
-  console.log(`9th inning:${score.Away}-${score.Home}`)
+  console.log(`9th inning: Away: ${score.Away} - Home ${score.Home}`)
 }
 
   }
-  return console.log(`Final Score:${score.Away}-${score.Home}`)
+  return console.log(`Final Score: Away: ${score.Away} - Home ${score.Home}`)
 }
 
 console.log(scoreboard(inning,getInningScore,9))
